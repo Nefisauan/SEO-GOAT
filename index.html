@@ -871,17 +871,32 @@
 <nav role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
     <a href="#hero" class="logo" aria-label="SEO GOAT Home">
-      <!-- LOGO SVG — goat silhouette, side profile -->
-      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="40" height="40" rx="9" fill="#38BDF8" fill-opacity="0.08"/>
-        <!-- Horn: sweeps back from forehead -->
-        <path d="M19 10 C16 7 10 5 8 8 C7 11 12 14 16 13 C18 13 19 11 19 10Z" fill="#38BDF8"/>
-        <!-- Ear: points forward-up from mid-head -->
-        <path d="M26 13 C30 9 36 11 34 16 C33 19 27 17 26 13Z" fill="#38BDF8"/>
-        <!-- Head + snout + beard: full profile silhouette -->
-        <path d="M12 30 C10 26 10 18 12 14 C13 11 16 10 19 10 C22 10 25 10 28 12 C31 14 34 18 34 22 C34 26 32 29 30 30 C28 32 25 33 23 33 C22 36 21 39 20 39 C19 39 18 36 17 33 C15 32 13 31 12 30Z" fill="#38BDF8"/>
-        <!-- Eye: clean negative space -->
-        <circle cx="21" cy="21" r="2.2" fill="#080d1a" opacity="0.4"/>
+      <!-- LOGO SVG — goat head, side profile silhouette -->
+      <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="100" height="100" rx="18" fill="#38BDF8" fill-opacity="0.08"/>
+        <!-- Full goat head silhouette: horn tip → outer horn → forehead → nose bridge →
+             muzzle (angular) → lower jaw → beard → throat → back of neck →
+             back of head → inner horn edge → back to horn tip -->
+        <path d="
+          M 12 8
+          C 16 2 28 4 38 16
+          C 44 18 50 20 55 24
+          C 62 28 72 36 78 46
+          C 78 52 76 58 74 64
+          C 72 68 66 72 60 74
+          C 58 78 56 84 54 90
+          C 52 94 50 96 48 94
+          C 46 92 46 86 48 82
+          C 44 80 36 76 28 72
+          C 20 66 14 56 14 48
+          C 12 38 14 28 16 20
+          C 14 14 12 10 12 8
+          Z
+        " fill="#38BDF8"/>
+        <!-- Ear: small pointed shape between horn base and eye -->
+        <path d="M 50 26 C 52 20 58 16 62 20 C 64 24 60 29 54 28 Z" fill="#38BDF8"/>
+        <!-- Eye: negative space -->
+        <circle cx="52" cy="42" r="5" fill="#080d1a" opacity="0.45"/>
       </svg>
       <div class="logo-text">
         <span class="seo">SEO</span><span class="goat"> GOAT</span>
@@ -1346,12 +1361,11 @@
 <footer>
   <div class="container footer-inner">
     <a href="#hero" class="logo" aria-label="SEO GOAT Home">
-      <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:28px;height:28px">
-        <rect width="40" height="40" rx="9" fill="#38BDF8" fill-opacity="0.08"/>
-        <path d="M19 10 C16 7 10 5 8 8 C7 11 12 14 16 13 C18 13 19 11 19 10Z" fill="#38BDF8"/>
-        <path d="M26 13 C30 9 36 11 34 16 C33 19 27 17 26 13Z" fill="#38BDF8"/>
-        <path d="M12 30 C10 26 10 18 12 14 C13 11 16 10 19 10 C22 10 25 10 28 12 C31 14 34 18 34 22 C34 26 32 29 30 30 C28 32 25 33 23 33 C22 36 21 39 20 39 C19 39 18 36 17 33 C15 32 13 31 12 30Z" fill="#38BDF8"/>
-        <circle cx="21" cy="21" r="2.2" fill="#080d1a" opacity="0.4"/>
+      <svg class="logo-icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:28px;height:28px">
+        <rect width="100" height="100" rx="18" fill="#38BDF8" fill-opacity="0.08"/>
+        <path d="M 12 8 C 16 2 28 4 38 16 C 44 18 50 20 55 24 C 62 28 72 36 78 46 C 78 52 76 58 74 64 C 72 68 66 72 60 74 C 58 78 56 84 54 90 C 52 94 50 96 48 94 C 46 92 46 86 48 82 C 44 80 36 76 28 72 C 20 66 14 56 14 48 C 12 38 14 28 16 20 C 14 14 12 10 12 8 Z" fill="#38BDF8"/>
+        <path d="M 50 26 C 52 20 58 16 62 20 C 64 24 60 29 54 28 Z" fill="#38BDF8"/>
+        <circle cx="52" cy="42" r="5" fill="#080d1a" opacity="0.45"/>
       </svg>
       <div class="logo-text" style="font-size:1rem">
         <span class="seo">SEO</span><span class="goat"> GOAT</span>
