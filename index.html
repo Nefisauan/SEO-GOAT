@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Done-for-you AI lead automation systems for local service businesses. Capture leads, follow up instantly, and book more jobs automatically." />
   <meta name="keywords" content="lead automation, AI follow-up, local business automation, HVAC leads, missed call text back, automated booking, Utah" />
-  <meta name="author" content="SEO GOAT" />
-  <meta property="og:title" content="SEO GOAT — Stop Losing Jobs to Missed Calls" />
+  <meta name="author" content="Revenue Pro Systems" />
+  <meta property="og:title" content="Revenue Pro Systems — Stop Losing Jobs to Missed Calls" />
   <meta property="og:description" content="Done-for-you AI systems that capture leads, follow up in 60 seconds, and book jobs automatically." />
   <meta property="og:type" content="website" />
-  <title>SEO GOAT — AI Lead Automation for Local Service Businesses</title>
+  <title>Revenue Pro Systems — AI Lead Automation for Local Service Businesses</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
@@ -102,6 +102,7 @@
     .logo-text { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.35rem; letter-spacing: -0.01em; line-height: 1; }
     .logo-text span.seo { color: var(--heading); }
     .logo-text span.goat { color: var(--accent); }
+    .logo-text { font-size: 1.15rem; }
 
     .nav-links { display: flex; list-style: none; gap: 32px; align-items: center; }
     .nav-links a { color: var(--muted); font-size: 0.9rem; font-weight: 500; transition: color .2s; }
@@ -247,8 +248,42 @@
     .badge-green  { background: rgba(52,211,153,0.1); color: var(--green); }
     .badge-blue   { background: rgba(56,189,248,0.1); color: var(--accent); }
 
+    /* ========== PROOF GALLERY ========== */
+    #proof { background: var(--bg); }
+
+    .proof-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; margin-top: 48px; }
+
+    .proof-card {
+      background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden;
+      transition: border-color .25s, transform .25s;
+    }
+    .proof-card:hover { border-color: rgba(56,189,248,0.3); transform: translateY(-3px); }
+
+    .proof-img {
+      width: 100%; aspect-ratio: 16/10; background: var(--bg-raised);
+      display: flex; align-items: center; justify-content: center;
+      border-bottom: 1px solid var(--border); overflow: hidden; position: relative;
+    }
+    .proof-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .proof-img-placeholder {
+      display: flex; flex-direction: column; align-items: center; gap: 10px;
+      color: var(--muted); font-size: 0.8rem; text-align: center; padding: 20px;
+    }
+    .proof-img-placeholder svg { color: rgba(56,189,248,0.3); }
+
+    .proof-card-body { padding: 20px 22px; }
+    .proof-tag {
+      display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 100px; margin-bottom: 10px;
+    }
+    .tag-bot   { background: rgba(56,189,248,0.1); color: var(--accent); }
+    .tag-crm   { background: rgba(129,140,248,0.1); color: var(--accent2); }
+    .tag-flow  { background: rgba(52,211,153,0.1); color: var(--green); }
+    .proof-card-body h4 { font-size: 1rem; font-family: 'Inter', sans-serif; font-weight: 600; margin-bottom: 6px; }
+    .proof-card-body p  { font-size: 0.85rem; color: var(--muted); line-height: 1.5; }
+
     /* ========== BENEFITS ========== */
-    #benefits { background: var(--bg); }
+    #benefits { background: var(--bg-card); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
 
     .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px; margin-top: 48px; }
 
@@ -429,7 +464,7 @@
 <!-- ===== NAV ===== -->
 <nav role="navigation" aria-label="Main navigation">
   <div class="container nav-inner">
-    <a href="#hero" class="logo" aria-label="SEO GOAT Home">
+    <a href="#hero" class="logo" aria-label="Revenue Pro Systems Home">
       <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
         <rect width="38" height="38" rx="9" fill="#38BDF8" fill-opacity="0.12"/>
         <ellipse cx="21" cy="23" rx="9" ry="7" fill="#38BDF8" fill-opacity="0.85"/>
@@ -446,7 +481,7 @@
         <path d="M12 22 C10 20 10 18 12 18" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
         <rect x="15" y="21" width="10" height="3" rx="1.5" fill="#080d1a" opacity="0.4"/>
       </svg>
-      <div class="logo-text"><span class="seo">SEO</span><span class="goat"> GOAT</span></div>
+      <div class="logo-text"><span class="seo">Revenue</span><span class="goat"> Pro Systems</span></div>
     </a>
 
     <ul class="nav-links">
@@ -668,6 +703,54 @@
 </section>
 
 
+<!-- ===== PROOF GALLERY ===== -->
+<section id="proof" aria-labelledby="proof-heading">
+  <div class="container">
+    <span class="section-label">Real Systems We've Built</span>
+    <h2 id="proof-heading" class="section-title">Not Theory — Actual<br/>Bots & Automations</h2>
+    <p class="section-sub">These are live systems built for real businesses. Screenshots of the actual chatbots, CRM pipelines, and automation flows.</p>
+
+    <div class="proof-grid">
+
+      <div class="proof-card">
+        <div class="proof-img">
+          <!-- Replace src with your actual screenshot path, e.g. src="images/bot-hvac.png" -->
+          <img src="images/proof-1.png" alt="AI chatbot for HVAC lead capture" onerror="this.parentNode.innerHTML='<div class=\'proof-img-placeholder\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'1.5\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><span>Add your screenshot here</span></div>'" />
+        </div>
+        <div class="proof-card-body">
+          <span class="proof-tag tag-bot">AI Chatbot</span>
+          <h4>Lead Capture Bot — HVAC Client</h4>
+          <p>Greets every visitor, qualifies the lead, collects contact info, and kicks off the follow-up sequence automatically.</p>
+        </div>
+      </div>
+
+      <div class="proof-card">
+        <div class="proof-img">
+          <img src="images/proof-2.png" alt="Automated SMS follow-up sequence" onerror="this.parentNode.innerHTML='<div class=\'proof-img-placeholder\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'1.5\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><span>Add your screenshot here</span></div>'" />
+        </div>
+        <div class="proof-card-body">
+          <span class="proof-tag tag-flow">Automation Flow</span>
+          <h4>5-Step SMS + Email Follow-Up</h4>
+          <p>Automated sequence that contacts leads over 7 days across text and email — runs completely hands-free.</p>
+        </div>
+      </div>
+
+      <div class="proof-card">
+        <div class="proof-img">
+          <img src="images/proof-3.png" alt="CRM pipeline dashboard" onerror="this.parentNode.innerHTML='<div class=\'proof-img-placeholder\'><svg width=\'40\' height=\'40\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'currentColor\' stroke-width=\'1.5\'><path stroke-linecap=\'round\' stroke-linejoin=\'round\' d=\'M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z\'/></svg><span>Add your screenshot here</span></div>'" />
+        </div>
+        <div class="proof-card-body">
+          <span class="proof-tag tag-crm">CRM Pipeline</span>
+          <h4>Lead Tracking Dashboard</h4>
+          <p>Every lead tracked from first contact to booked job. You see exactly where each prospect is in your pipeline.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <!-- ===== BENEFITS ===== -->
 <section id="benefits" aria-labelledby="benefits-heading">
   <div class="container">
@@ -788,8 +871,8 @@
 
       <div class="price-card">
         <p class="price-name">Starter System</p>
-        <div class="price-setup">$1,500</div>
-        <div class="price-monthly">+ $297/month</div>
+        <div class="price-setup">$497</div>
+        <div class="price-monthly">+ $97/month</div>
         <p class="price-note">Setup fee + monthly management</p>
         <ul class="price-features">
           <li><svg class="check" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>High-converting landing page</li>
@@ -804,8 +887,8 @@
       <div class="price-card featured">
         <span class="featured-badge">Most Popular</span>
         <p class="price-name">Growth System</p>
-        <div class="price-setup">$2,500</div>
-        <div class="price-monthly">+ $497/month</div>
+        <div class="price-setup">$997</div>
+        <div class="price-monthly">+ $197/month</div>
         <p class="price-note">Setup fee + monthly management</p>
         <ul class="price-features">
           <li><svg class="check" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Everything in Starter</li>
@@ -820,8 +903,8 @@
 
       <div class="price-card">
         <p class="price-name">Full Automation</p>
-        <div class="price-setup">$3,500</div>
-        <div class="price-monthly">+ $697/month</div>
+        <div class="price-setup">$1,997</div>
+        <div class="price-monthly">+ $397/month</div>
         <p class="price-note">Setup fee + monthly management</p>
         <ul class="price-features">
           <li><svg class="check" width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>Everything in Growth</li>
@@ -867,7 +950,7 @@
           <div class="contact-detail-icon" aria-hidden="true">
             <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
           </div>
-          <a href="mailto:seogoatwebsites@gmail.com" style="color:var(--text)">seogoatwebsites@gmail.com</a>
+          <a href="mailto:revenueprosystems@gmail.com" style="color:var(--text)">revenueprosystems@gmail.com</a>
         </div>
 
         <div class="contact-detail">
@@ -888,8 +971,8 @@
       <div class="contact-form">
         <form id="contactForm" novalidate action="https://api.web3forms.com/submit" method="POST">
           <input type="hidden" name="access_key" value="1cf21a2d-c080-4bef-b3f9-a47579c5a778" />
-          <input type="hidden" name="subject" value="New Demo Request — SEO GOAT" />
-          <input type="hidden" name="from_name" value="SEO GOAT Website" />
+          <input type="hidden" name="subject" value="New Demo Request — Revenue Pro Systems" />
+          <input type="hidden" name="from_name" value="Revenue Pro Systems Website" />
           <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 
           <div class="form-row">
@@ -954,7 +1037,7 @@
 <!-- ===== FOOTER ===== -->
 <footer>
   <div class="container footer-inner">
-    <a href="#hero" class="logo" aria-label="SEO GOAT Home">
+    <a href="#hero" class="logo" aria-label="Revenue Pro Systems Home">
       <svg class="logo-icon" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:28px;height:28px">
         <rect width="38" height="38" rx="9" fill="#38BDF8" fill-opacity="0.12"/>
         <ellipse cx="21" cy="23" rx="9" ry="7" fill="#38BDF8" fill-opacity="0.85"/>
@@ -970,9 +1053,9 @@
         <line x1="26" y1="29" x2="27" y2="34" stroke="#38BDF8" stroke-width="2" stroke-linecap="round"/>
         <path d="M12 22 C10 20 10 18 12 18" stroke="#38BDF8" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
       </svg>
-      <div class="logo-text" style="font-size:1rem"><span class="seo">SEO</span><span class="goat"> GOAT</span></div>
+      <div class="logo-text" style="font-size:1rem"><span class="seo">Revenue</span><span class="goat"> Pro Systems</span></div>
     </a>
-    <p class="footer-copy">&copy; 2025 SEO GOAT. All rights reserved.</p>
+    <p class="footer-copy">&copy; 2026 Revenue Pro Systems. All rights reserved.</p>
     <ul class="footer-links">
       <li><a href="#problem">The Problem</a></li>
       <li><a href="#solution">The System</a></li>
@@ -1034,7 +1117,7 @@
     } catch {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Book My Free Demo Call';
-      alert('Something went wrong. Please email seogoatwebsites@gmail.com directly.');
+      alert('Something went wrong. Please email revenueprosystems@gmail.com directly.');
     }
   });
 
