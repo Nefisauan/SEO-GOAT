@@ -300,6 +300,41 @@
     .compare-sum-item .num { font-family: 'Syne', sans-serif; font-size: 1.8rem; font-weight: 800; color: var(--green); display: block; line-height: 1; margin-bottom: 4px; }
     .compare-sum-item .lbl { font-size: 0.78rem; color: var(--muted); }
 
+    .math-box {
+      margin-top: 28px; border: 1px solid rgba(56,189,248,0.2);
+      border-radius: var(--radius); background: rgba(56,189,248,0.04); padding: 32px 36px;
+    }
+    .math-box-top { display: flex; align-items: center; gap: 12px; margin-bottom: 24px; }
+    .math-box-top h4 { font-size: 1.05rem; font-family: 'Inter', sans-serif; font-weight: 700; }
+    .math-box-top p { font-size: 0.875rem; color: var(--muted); margin-top: 3px; }
+    .math-tag { display: inline-block; background: rgba(56,189,248,0.1); color: var(--accent); font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; padding: 4px 12px; border-radius: 100px; white-space: nowrap; }
+
+    .math-cols { display: grid; grid-template-columns: 1fr auto 1fr; gap: 16px; align-items: center; }
+    .math-col { background: var(--bg-raised); border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+    .math-col.highlight { border-color: rgba(56,189,248,0.35); background: rgba(56,189,248,0.05); }
+    .math-col-label { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; margin-bottom: 14px; }
+    .math-col.manual-m .math-col-label { color: var(--red); }
+    .math-col.auto-m   .math-col-label { color: var(--accent); }
+    .math-line { display: flex; justify-content: space-between; align-items: baseline; padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+    .math-line:last-child { border-bottom: none; }
+    .math-line span:first-child { color: var(--muted); }
+    .math-line span:last-child  { font-weight: 600; color: var(--heading); }
+    .math-result { margin-top: 12px; padding-top: 12px; border-top: 2px solid var(--border); display: flex; justify-content: space-between; align-items: baseline; }
+    .math-result .r-label { font-size: 0.8rem; font-weight: 600; color: var(--muted); }
+    .math-result .r-val   { font-family: 'Syne', sans-serif; font-size: 1.6rem; font-weight: 800; }
+    .manual-m .r-val { color: var(--red); }
+    .auto-m   .r-val { color: var(--green); }
+
+    .math-vs { text-align: center; font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: var(--muted); }
+    .math-bottom { margin-top: 20px; text-align: center; font-size: 0.875rem; color: var(--muted); }
+    .math-bottom strong { color: var(--heading); }
+
+    @media (max-width: 700px) {
+      .math-cols { grid-template-columns: 1fr; }
+      .math-vs { display: none; }
+      .math-box { padding: 24px 20px; }
+    }
+
     /* ========== PROOF GALLERY ========== */
     #proof { background: var(--bg); }
 
@@ -879,6 +914,47 @@
         <span class="lbl">Faster first response</span>
       </div>
     </div>
+
+    <div class="math-box">
+      <div class="math-box-top">
+        <span class="math-tag">The Math</span>
+        <div>
+          <h4>Cold email converts at ~1% — so volume is everything</h4>
+          <p>1 client per 100 emails sent. The only way to get more clients is to send more emails. Here's what that looks like per month:</p>
+        </div>
+      </div>
+
+      <div class="math-cols">
+        <div class="math-col manual-m">
+          <p class="math-col-label">Manual (Employee)</p>
+          <div class="math-line"><span>Emails sent/day</span><span>10–15</span></div>
+          <div class="math-line"><span>Working days/month</span><span>22 days</span></div>
+          <div class="math-line"><span>Total emails/month</span><span>~300</span></div>
+          <div class="math-line"><span>Conversion rate</span><span>~1%</span></div>
+          <div class="math-result">
+            <span class="r-label">Clients per month</span>
+            <span class="r-val">~3</span>
+          </div>
+        </div>
+
+        <div class="math-vs">VS</div>
+
+        <div class="math-col auto-m highlight">
+          <p class="math-col-label">Automated System</p>
+          <div class="math-line"><span>Emails sent/day</span><span>50+</span></div>
+          <div class="math-line"><span>Running days/month</span><span>30 days</span></div>
+          <div class="math-line"><span>Total emails/month</span><span>1,500+</span></div>
+          <div class="math-line"><span>Conversion rate</span><span>~1%</span></div>
+          <div class="math-result">
+            <span class="r-label">Clients per month</span>
+            <span class="r-val">~15</span>
+          </div>
+        </div>
+      </div>
+
+      <p class="math-bottom">Same conversion rate. Same offer. Just <strong>5x more volume</strong> — and the system does it while you sleep. That's the only difference.</p>
+    </div>
+
   </div>
 </section>
 
